@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* * {
+  border: 1px solid red;
+} */
+
+@layer utilities {
+  /* Scrollbar Custom */
+  .custom-scroll::-webkit-scrollbar {
+    width: 8px; /* lebar scrollbar */
+  }
+
+  .custom-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; /* warna track (jalur belakang scrollbar) */
+    border-radius: 9999px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: #c0c0c0; /* warna "thumb" (batang scrollbar) */
+    border-radius: 9999px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af; /* warna saat hover */
+  }
+
+  /* Untuk Firefox */
+  .custom-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #c0c0c0 #f1f1f1;
+  }
+}
+
