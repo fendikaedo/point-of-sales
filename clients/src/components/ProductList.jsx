@@ -50,7 +50,7 @@ export default function ProductList({ activeTab, onOpenModalCreate }) {
       ) : error ? (
         <p className="p-4 text-red-500">{error}</p>
       ) : (
-        <div className="grid md:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-auto pr-2 custom-scroll">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-auto pr-2 custom-scroll">
           {filtered.length > 0 ? (
             filtered.map((product) => (
               <ProductCard key={product.id} product={product} />
